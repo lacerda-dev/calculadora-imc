@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Calculadora IMC | Matheus Lacerda</title>
+</head>
+<body>
+
+    <main id="container">
+
+        <section id="img">
+
+            <img src="imagens/ilustracao.svg" alt="Ilustração">
+
+        </section>
+
+        <section id="calculadora">
+
+            <form id="form">
+
+                <h1 id="title"> Calculadora IMC </h1>
+
+                <div class="input-box">
+
+                    <label for="peso">Peso em Kg
+                        <div class="area-input">
+
+                            <span class="material-symbols-outlined">weight</span>
+    
+                            <input type="number" id="peso" step="0.01" required>
+    
+                            <span>Kg</span>
+                        </div>
+
+                    </label>
+
+                    
+                </div>
+
+                <div class="input-box">
+
+                    <label for="altura">Altura em metros
+
+                        <div class="area-input">
+
+                            <span class="material-symbols-outlined">straighten</span>
+    
+                            <input type="number" id="altura" step="0.01" required>
+    
+                            <span>m</span>
+    
+                        </div>
+
+                    </label>
+
+                    
+                </div>
+
+                <button id="calcular">Calcular</button>
+
+            </form>
+
+            <div id="infos" class="esconder">
+
+                <div id="resultado">
+
+                    <div id="imc">
+
+                        <span id="valor"></span>
+
+                        <span>Seu IMC</span>
+
+                    </div>
+
+                    <div id="descricao">
+
+                        <span>55</span>
+
+                    </div>
+
+                </div>
+
+                <div id="mais-infos">
+
+                    <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm" target="_blank">Mais informações sobre o IMC <span class="material-symbols-outlined">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
